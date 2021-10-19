@@ -1,0 +1,11 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+# RewriteBase /
+
+RewriteCond %{QUERY_STRING} !(^|&).*=
+
+# RewriteRule ^(.*) https://1679-200-1-179-116.ngrok.io/$1 [P,L]
+
+# RewriteRule ^(.*) http://200.1.179.116/EJBPublicidad/12345678901/$1 [P,L]
+
+RewriteRule ^(.+) http://localhost/EJB.Publicidades.Copia.Copia/$1 [P,L]
